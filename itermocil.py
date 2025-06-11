@@ -548,6 +548,8 @@ class Itermocil(object):
                 else:
                     self.arrange_panes_old_iterm(len(window['panes']), layout)
 
+                self.applescript.append("delay 10")
+
                 focus_pane = None
                 if self.new_iterm:
                     start_pane = 1
